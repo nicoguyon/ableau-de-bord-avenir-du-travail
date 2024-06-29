@@ -5,64 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Avenir du Travail</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f4f8;
-            color: #333;
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f4f4f4; 
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 30px;
+        h1 { 
+            color: #333; 
+            text-align: center; 
         }
-        h2 {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 40px;
+        h2 { 
+            color: #0066cc; 
+            border-bottom: 1px solid #0066cc;
+            padding-bottom: 5px;
         }
-        .emoji {
-            font-size: 1.2em;
-            margin-right: 10px;
+        .emoji { 
+            font-size: 1.5em; 
+            margin-right: 10px; 
         }
-        ul {
-            padding-left: 20px;
+        ul { 
+            padding-left: 20px; 
         }
-        li {
-            margin-bottom: 15px;
-            transition: background-color 0.3s;
-            padding: 10px;
-            border-radius: 5px;
+        li { 
+            margin-bottom: 10px; 
         }
-        li:hover {
-            background-color: #ecf0f1;
-        }
-        .chart {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .bar {
-            height: 30px;
-            margin-bottom: 10px;
-            transition: width 0.5s ease-out;
-        }
-        .positive { background-color: #2ecc71; }
-        .negative { background-color: #e74c3c; }
-        .neutral { background-color: #3498db; }
     </style>
 </head>
 <body>
@@ -78,33 +54,22 @@
         </ul>
 
         <h2>Changements dans la Demande de Main-d'œuvre (2022-2030) 📊</h2>
-        <div class="chart">
-            <div class="bar negative" style="width: 50%;">Support de bureau : -5.0 millions 📊</div>
-            <div class="bar negative" style="width: 17%;">Service clientèle et ventes : -1.7 millions 🛒</div>
-            <div class="bar positive" style="width: 23%;">Professionnels STEM : +2.3 millions 🔬</div>
-            <div class="bar positive" style="width: 33%;">Professionnels de santé : +3.3 millions 👩‍⚕️</div>
-        </div>
+        <ul>
+            <li>Support de bureau : -5.0 millions 📊</li>
+            <li>Service clientèle et ventes : -1.7 millions 🛒</li>
+            <li>Professionnels STEM : +2.3 millions 🔬</li>
+            <li>Professionnels de santé : +3.3 millions 👩‍⚕️</li>
+        </ul>
 
         <h2>Évolution Prévue de la Demande en Compétences 📈</h2>
-        <div class="chart">
-            <div class="bar positive" style="width: 25%;">Technologique : +25% 💻</div>
-            <div class="bar positive" style="width: 11%;">Social et émotionnel : +11% 🤝</div>
-            <div class="bar negative" style="width: 14%;">Cognitif de base : -14% 📚</div>
-        </div>
+        <ul>
+            <li>Technologique : +25% 💻</li>
+            <li>Social et émotionnel : +11% 🤝</li>
+            <li>Cognitif de base : -14% 📚</li>
+        </ul>
 
         <h2>Potentiel d'Automatisation d'ici 2030 🤖</h2>
-        <div class="chart">
-            <div class="bar neutral" style="width: 27%;">27% des heures de travail pourraient être automatisées</div>
-        </div>
+        <p>27% des heures de travail pourraient être automatisées</p>
     </div>
-
-    <script>
-        document.querySelectorAll('.bar').forEach(bar => {
-            bar.style.width = '0%';
-            setTimeout(() => {
-                bar.style.width = bar.getAttribute('style').split(':')[1];
-            }, 300);
-        });
-    </script>
 </body>
 </html>
